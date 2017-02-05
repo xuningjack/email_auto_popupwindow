@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <!-- 放大镜icon -->
+    <ImageView
+        android:id="@+id/layout_magnifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/icon_magnifier"
+        android:visibility="gone"/>
+
+    <!-- 查找的输入框 -->
+    <EditText
+        android:id="@+id/layout_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:inputType="text"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
+
+    <!-- 删除内容的icon -->
+    <ImageView
+        android:id="@+id/layout_edit_text_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/icon_clear"
+        android:visibility="gone" />
+
+</LinearLayout>
